@@ -68,15 +68,14 @@ root), a `tsconfig.json` per project dir.
 
 ## Updating
 
-This skill dir is a git clone of `github.com/lum1neuz/codegraph`; commit and push fixes there.
-Bug fix or feature: change `scripts/` here first, then copy the `.mjs` files over every
-project's `tools/codegraph/` (known install: `D:\Github\taamn`). Configs are never
-overwritten.
+This skill dir is usually a git clone of `github.com/lum1neuz/codegraph`; commit and push
+fixes there. Bug fix or feature: change `scripts/` here first, then copy the `.mjs` files over
+every project's `tools/codegraph/` (grep for `tools/codegraph/config.json` to find installs).
+Configs are never overwritten.
 
 ## Notes
 
-- Origin: built 2026-10-09 in taamn as an in-house alternative to Graft (trailhq/Graft). It
-  keeps Graft's callers and blast radius, drops its per-prompt injection, LLM summaries and
-  cloud sync.
+- Inspired by Graft (trailhq/Graft): keeps its callers and blast radius, drops per-prompt
+  context injection, LLM summaries and cloud sync.
 - Windows: everything normalises paths to forward slashes. Never run `taskkill /IM node.exe`
   to stop a hung run; it kills the user's dev servers too. Kill the specific PID.
