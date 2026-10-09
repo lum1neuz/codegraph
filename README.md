@@ -1,3 +1,15 @@
+<p align="center">
+  <img src="assets/header.svg" alt="codegraph: code intelligence for AI coding agents" width="100%"/>
+</p>
+
+<p align="center">
+  <a href="LICENSE"><img src="https://img.shields.io/badge/license-MIT-20C997?style=flat-square" alt="MIT license"/></a>
+  <img src="https://img.shields.io/badge/node-%E2%89%A518-3C873A?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node 18+"/>
+  <img src="https://img.shields.io/badge/TypeScript-language%20service-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript language service"/>
+  <img src="https://img.shields.io/badge/dependencies-0-546FFF?style=flat-square" alt="zero dependencies"/>
+  <img src="https://img.shields.io/badge/Claude%20Code-skill-D97757?style=flat-square" alt="Claude Code skill"/>
+</p>
+
 # codegraph
 
 **Compiler-accurate code graph tools for AI coding agents working in TypeScript repos.**
@@ -212,6 +224,7 @@ scripts/
   postEditHook.mjs         PostToolUse hook
   README.md                per-project reference (copied into tools/codegraph/)
 templates/                 example config.json and moneyPaths.json
+assets/                    icon and header artwork (SVG)
 ```
 
 `scripts/` is the canonical copy. Projects get a vendored copy in `tools/codegraph/`. To
@@ -222,3 +235,7 @@ update a project, copy the `.mjs` files over; its two config files are never tou
 The callers and blast-radius ideas come from [Graft](https://github.com/trailhq/Graft).
 codegraph is a smaller take on them: it leaves out per-prompt context injection, LLM
 summaries and cloud sync, and uses the TypeScript compiler instead of tree-sitter.
+
+## License
+
+[MIT](LICENSE) © 2026 lum1neuz
