@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "api": { "dir": "backend", "extraRoots": ["tests"] },
+    "web": { "dir": "frontend" }
+  },
+  "schemaFiles": ["backend/prisma/schema.prisma"]
+}

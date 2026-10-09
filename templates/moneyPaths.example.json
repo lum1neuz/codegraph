@@ -1,0 +1,9 @@
+[
+  "backend/src/services/payments/**",
+  "backend/src/services/ledger*.ts",
+  "backend/src/services/settlement*.ts",
+  "backend/src/routes/webhooks/**",
+  "backend/src/lib/auth.ts",
+  "backend/src/lib/session.ts",
+  "backend/prisma/schema.prisma"
+]
